@@ -25,14 +25,14 @@
         const formData = new FormData();
         formData.append("file", this.selectedFile);
   
-        fetch("http://154.8.177.37:5000/upload", {
+        fetch("https://database-experiment-flask.azurewebsites.net/upload", {
           method: "POST",
           body: formData
         })
           .then(response => response.json())
           .then(data => {
             if (data.code === 200) {
-              this.resultData = "http://154.8.177.37:5000/download/" + data.data;
+              this.resultData = "https:/database-experiment-flask.azurewebsites.net/download/" + data.data;
             } else {
               console.error(data.data);
             }

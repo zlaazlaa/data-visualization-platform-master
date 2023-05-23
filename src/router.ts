@@ -18,6 +18,11 @@ const routes: Array<RouteRecordRaw> = [
         path: '/predict2',
         name: 'predict2',
         component: () => import('@/views/my_predict.vue')
+    },
+    {
+        path: '/predict',
+        name: 'predict',
+        component: () => import('@/views/my_predict.vue')
     }
 ]
 

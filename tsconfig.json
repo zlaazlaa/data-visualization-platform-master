@@ -3,7 +3,7 @@
     "paths": {
       "element-plus": ["node_modules/element-plus"]
     },
-    "baseUrl": "http://154.8.177.37:5000/",
+    "baseUrl": "https://database-experiment-flask.azurewebsites.net/",
     "types": ["element-plus/global"],
     "target": "ES2020",
     "useDefineForClassFields": true,
