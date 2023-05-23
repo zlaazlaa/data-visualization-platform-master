@@ -32,7 +32,7 @@
           .then(response => response.json())
           .then(data => {
             if (data.code === 200) {
-              this.resultData = "https:/database-experiment-flask.azurewebsites.net/download/" + data.data;
+              this.resultData = "https://database-experiment-flask.azurewebsites.net/download/" + data.data;
             } else {
               console.error(data.data);
             }
